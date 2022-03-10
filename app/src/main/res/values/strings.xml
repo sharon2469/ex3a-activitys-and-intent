@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ex3a</string>
+    <string name="activity_main_textview_title1">Hello, this app will demonstrate the transfer to a second activity and sending results back to this one. Press the button to start.</string>
+    <string name="activity_main_textview_title2">Welcome back  </string>
+    <string name="activity_main_textview_firstname">First Name:</string>
+    <string name="activity_main_textview_lastname">Last Name:</string>
+    <string name="activity_main_radio_button_male">Male</string>
+    <string name="activity_main_radio_button_female">Female</string>
+
+    <string name="activity_main_button_register">Register</string>
+    <string name="activity_main_button_send_back">Send Back</string>
+    <string name="activity_main_button_again">again...</string>
+
+
+</resources>
