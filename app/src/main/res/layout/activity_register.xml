@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6D3B5"
+    android:layoutDirection="ltr"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/edFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/edLastName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/edLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="112dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/activity_main_textview_firstname"
+        app:layout_constraintEnd_toStartOf="@+id/edFirstName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/activity_main_textview_lastname"
+        app:layout_constraintBottom_toTopOf="@+id/rgGender"
+        app:layout_constraintEnd_toStartOf="@+id/edLastName"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="229dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="325dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edLastName">
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_main_radio_button_male" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_main_radio_button_female" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btSendBack"
+        android:layout_width="136dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="144dp"
+        android:backgroundTint="#5BDFEC"
+        android:onClick="sendBackBtnClicked"
+        android:text="@string/activity_main_button_send_back"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgGender" />
+</androidx.constraintlayout.widget.ConstraintLayout>
